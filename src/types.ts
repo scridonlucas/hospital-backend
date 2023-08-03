@@ -12,3 +12,6 @@ export interface Diagnose {
   name: string;
   latin?: string;
 }
+
+export type PatientWithoutSSN = Omit<Patient, 'ssn'>;
+export type NewPatient = Omit<Patient, 'id'>;
